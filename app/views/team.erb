@@ -1,3 +1,29 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Team & Heroes</title>
+  </head>
+<body>
 
+<h1>Team and Their Heroes</h1>
+  <h2>Team</h2>
+    <h3>Team Name:<%= @team.name %></h2>
+    <h3>Team Motto: <%= @team.motto %></h3>
+  <br>
+<h1>Heroes</h1>
+
+
+  <h2>Hero</h2>
+      <h3>Hero Name: <%= @heroes[0].name %></h3>
+        <h4>Hero Power: <%= @heroes[0].power %></h4>
+        <h4>Hero Biography: <%= @heroes[0].biography %></h4>
+    <br>
+  
+  <h2>Hero</h2>
+      <h3>Hero Name: <%= @heroes[1].name %></h3>
+        <h4>Hero Power: <%= @heroes[1].power %></h4>
+        <h4>Hero Biography: <%= @heroes[1].biography %></h4>
+  </body>
+  </html>
 
 
