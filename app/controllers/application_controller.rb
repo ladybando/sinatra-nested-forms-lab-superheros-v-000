@@ -7,7 +7,7 @@ class App < Sinatra::Base
     erb :super_hero
   end
   
-    get '/super_hero' do
+  get '/super_hero' do
     erb :"/views/super_hero"
   end
   
