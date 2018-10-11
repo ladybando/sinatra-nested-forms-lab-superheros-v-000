@@ -12,17 +12,13 @@
   <br>
 <h1>Heroes</h1>
 
-
-  <h2>Hero</h2>
-      <h3>Hero Name: <%= @hero[0].name %></h3>
-        <h4>Hero Power: <%= @hero[0].power %></h4>
-        <h4>Hero Biography: <%= @hero[0].biography %></h4>
-    <br>
-  
-  <h2>Hero</h2>
-      <h3>Hero Name: <%= @hero[1].name %></h3>
-        <h4>Hero Power: <%= @hero[1].power %></h4>
-        <h4>Hero Biography: <%= @hero[1].biography %></h4>
+<h2>Heroes</h2>
+<% @heroes.each do |hero| %>
+  <h3>Hero Name: <%= hero.name %></h3>
+  <h4>Hero Power: <%= hero.power %></h4>
+  <h4>Hero Biography: <%= hero.bio %></h4>
+  <br>
+  <% end %>
   </body>
   </html>
 
